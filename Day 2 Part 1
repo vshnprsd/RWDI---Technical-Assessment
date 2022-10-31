@@ -6,11 +6,11 @@ f = 0
 for line in pi.read().splitlines():
 	direction, value = line.split()
 	if direction[0] == 'f':
-		f += int(value)
+		f = f+int(value)
 	elif direction[0] == 'u':
-		d -= int(value)
+		d = d-int(value)
 	elif direction[0] == 'd':
-		d += int(value)
+		d = d+int(value)
 
 print(f*d)
 pi.close()
