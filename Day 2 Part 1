@@ -13,3 +13,4 @@ for line in pi.read().splitlines():
 		d += int(value)
 
 print(f*d)
+pi.close()
